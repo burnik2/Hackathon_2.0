@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Trivia">
+        <h1>Trivia Quiz (2 players)</h1>
+    <div class="name" id="name">
+        <h2>Enter player names</h2>
+        <input type="Name" placeholder="Player 1" id="name1">
+        <input type="Name" placeholder="Player 2" id="name2">
+        <button pl id="names"> Start </button>
+    </div>
+
+    <div class="choices" id="choices">
+        <h2>Select a Category</h2>
+        <select id="dropdown"></select>
+        <button id="select">Select Category</button>
+    </div>
+
+    <div class="questions" id="questions">
+        <h2 id="index"></h2>
+        <h2 id="playerid"></h2>
+        <h3 id="difficulty"></h3>
+        <p id="question-text"></p>
+        <ul id="answer-choices"></ul>
+        
+    </div>
+
+    <div class="Next" id="Next">
+        <button id="continue">Continue</button>
+        <button id="end">End</button>
+    </div>
+
+    <div class="result" id="result">
+        <h1 id="winner"></h2>
+        <p id="score"></p>
+    </div>
+</div>
+    <script src="logic.js"></script>
+</body>
+</html>
