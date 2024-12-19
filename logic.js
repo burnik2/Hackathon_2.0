@@ -139,10 +139,10 @@ function score(event) {
         display();
     }
     else {
+        document.getElementsByClassName('questions').innerHTML = '';
         document.getElementById('questions').style.display = 'none';
         if (cat != []) {
             document.getElementById('Next').style.display = 'block';//to continue
-            document.getElementsByClassName('questions').innerHTML = '';
         }
         else {
             result();
