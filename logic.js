@@ -40,6 +40,7 @@ function show_category() {
     for (let key in cat) {
         const option = document.createElement('option');
         option.value = c;
+        c++;
         option.textContent = key;
         dropdown.appendChild(option);
     }
@@ -57,6 +58,7 @@ async function question_fetch() {
     let keys= Object.keys(cat);
     category = keys[index.value];
     // console.log(category);
+    // console.log(index.value);
 
     //deleting chooseng category
     delete cat[keys[index.value]];
@@ -155,7 +157,7 @@ document.getElementById('end').addEventListener('click', result);
 function result() {
     document.getElementById('Next').style.display = 'none';
     document.getElementById('result').style.display = 'block';
-    const winner = players[0].scores > players[1].scores ? "The winner is " + players[0].name : players[0].scores < players[1].scores ? "The winner is " + players[1].name : "It is a Tie";
+    const winner = players[0].scores > players[1].scores ? "The winner is " + players[0].name +"!!!": players[0].scores < players[1].scores ? "The winner is " + players[1].name +"!!!": "It is a Tie";
     document.getElementById('winner').textContent = `${winner}`;
     document.getElementById('score').textContent = `${players[0].name} : ${players[0].scores} | ${players[1].name} : ${players[1].scores}`;
 }
