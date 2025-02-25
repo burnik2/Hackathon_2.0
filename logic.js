@@ -44,6 +44,12 @@ function show_category() {
         option.textContent = key;
         dropdown.appendChild(option);
     }
+    // cat.map(function(key) {
+    //     const option = document.createElement('option');
+    //     option.value = c;
+    //     c++;
+    //     option.textContent = key;
+    //     dropdown.appendChild(option)});
 }
 
 document.getElementById('select').addEventListener('click', question_fetch);
